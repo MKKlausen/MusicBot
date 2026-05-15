@@ -40,6 +40,7 @@ public class CommandFactory {
                     // new LyricsCmd(bot),
                     new NowPlayingCmd(bot),
                     new PlayCmd(bot),
+                    new PlayShuffleLoadCmd(bot),
                     new PlaylistsCmd(bot),
                     new QueueCmd(bot),
                     new RemoveCmd(bot),
