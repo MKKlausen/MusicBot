@@ -273,10 +273,10 @@ public class OtherUtil
         // Check for new version
         String latestVersion = getLatestVersion();
 
-        if(latestVersion != null && isNewerVersion(version, latestVersion))
-        {
-            userInteraction.alert(Prompt.Level.WARNING, "JMusicBot Version", String.format(NEW_VERSION_AVAILABLE, version, latestVersion));
-        }
+        // if(latestVersion != null && isNewerVersion(version, latestVersion))
+        // {
+        //     userInteraction.alert(Prompt.Level.WARNING, "JMusicBot Version", String.format(NEW_VERSION_AVAILABLE, version, latestVersion));
+        // }
     }
 
     public static boolean isNewerVersion(String current, String latest)

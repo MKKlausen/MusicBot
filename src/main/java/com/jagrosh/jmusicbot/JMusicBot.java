@@ -105,8 +105,8 @@ public class JMusicBot
         }
         
         // startup checks
-        OtherUtil.checkVersion(userInteraction);
-        OtherUtil.checkJavaVersion(userInteraction);
+        //OtherUtil.checkVersion(userInteraction);
+        //OtherUtil.checkJavaVersion(userInteraction);
         
         // load config
         BotConfig config = new BotConfig(userInteraction);

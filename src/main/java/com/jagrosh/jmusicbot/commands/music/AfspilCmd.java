@@ -90,6 +90,8 @@ public class AfspilCmd extends MusicCommand
         put("Desert".toLowerCase(), "https://www.youtube.com/watch?v=94r_4et_220&list=PL-MQlYeAlINDYpa4ENW0zxs2YyU7wsORk");
         put("Western".toLowerCase(), "https://www.youtube.com/watch?v=UL16gE10Clc&list=PL-MQlYeAlINCmrhSe_yJatRPOyjd92MDm");
         put("Khaspia".toLowerCase(), "https://www.youtube.com/watch?v=PAHG-9uKUug&list=PL-MQlYeAlINDx7FVbwDv_JsFQj3jvhs6o");
+        put("Orcs".toLowerCase(), "https://www.youtube.com/watch?v=ol9gYe_C8GI&list=PL-MQlYeAlINDrQeBCL3_J4se8TX0U8bTF");
+        put("OrcsCombat".toLowerCase(), "https://www.youtube.com/watch?v=OK0L1MhMlYY&list=PL-MQlYeAlINCXD8cLtNfFFh3nUyTVgg_L");
     }};
 
 
@@ -180,15 +182,10 @@ public class AfspilCmd extends MusicCommand
             AudioHandler handler = (AudioHandler)event.getGuild().getAudioManager().getSendingHandler();
             AudioPlayer player = handler.getPlayer();
 
-            if (player.getPlayingTrack()!= null) {
-                player.stopTrack();
-                
-            }
-            
             handler.getQueue().clear();
             
             loadPlaylist(playlist, null);
-
+            player.stopTrack(); 
             
             AudioTrack currentTrack = handler.getPlayer().getPlayingTrack();
             
