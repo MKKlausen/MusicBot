@@ -27,4 +27,5 @@ Thumbs.db
 *.lock
 
 #Configs
-confix.txt*
+confix.txt
+confix.txt.bak

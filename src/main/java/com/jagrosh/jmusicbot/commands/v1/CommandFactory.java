@@ -31,6 +31,7 @@ import com.jagrosh.jmusicbot.commands.v2.dj.RepeatSlashCmd;
 import com.jagrosh.jmusicbot.commands.v2.dj.SkiptoSlashCmd;
 import com.jagrosh.jmusicbot.commands.v2.dj.StopSlashCmd;
 import com.jagrosh.jmusicbot.commands.v2.dj.VolumeSlashCmd;
+import com.jagrosh.jmusicbot.commands.v2.music.AfspilSlashCmd;
 import com.jagrosh.jmusicbot.commands.v2.music.HistorySlashCmd;
 import com.jagrosh.jmusicbot.commands.v2.music.NowPlayingSlashCmd;
 import com.jagrosh.jmusicbot.commands.v2.music.NpSlashCmd;
@@ -70,6 +71,7 @@ public class CommandFactory {
                     // new LyricsCmd(bot),
                     new NowPlayingCmd(bot),
                     new PlayCmd(bot),
+                    new AfspilCmd(bot),
                     new PlaylistsCmd(bot),
                     new QueueCmd(bot),
                     new HistoryCmd(bot),
@@ -113,6 +115,7 @@ public class CommandFactory {
                     new NowPlayingSlashCmd(bot),
                     new NpSlashCmd(bot),
                     new PlaySlashCmd(bot),
+                    new AfspilSlashCmd(bot),
                     new PlaylistsSlashCmd(bot),
                     new QueueSlashCmd(bot),
                     new HistorySlashCmd(bot),

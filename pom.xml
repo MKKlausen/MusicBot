@@ -97,7 +97,14 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- JUnit BOM to align all JUnit modules -->
+            
+            <dependency>
+                <groupId>com.google.code.findbugs</groupId>
+                <artifactId>jsr305</artifactId>
+                <version>3.0.2</version>
+            </dependency>
+
+            <!-- JUnit BOM to align all JUnit modules -->            
             <dependency>
                 <groupId>org.junit</groupId>
                 <artifactId>junit-bom</artifactId>
